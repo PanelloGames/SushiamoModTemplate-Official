@@ -1,0 +1,21 @@
+{
+    "name": "SushiamoModTemplate",
+    "namespace": "Author",
+    "version_number": "1.0.0",
+    "description": "Sushiamo example mod",
+    "website_url": "",
+    "dependencies": [],
+    "extra": {
+        "godot": {
+            "authors": ["Author"],
+            "tags": ["Content"],
+            "description_rich": "",
+            "optional_dependencies": [],
+            "load_before": [],
+            "incompatibilities": [],
+            "compatible_mod_loader_version": ["7.0.0"],
+            "compatible_game_version": ["0.9.0", "1.0.0"],
+            "config_schema": {}
+        }
+    }
+}

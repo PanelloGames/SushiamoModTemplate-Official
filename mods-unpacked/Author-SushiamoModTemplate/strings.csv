@@ -1,0 +1,8 @@
+keys,en,es
+INGREDIENT_WATER_NAME,"Water","Agua"
+INGREDIENT_WATER_DESC,"{f}+10{} flavour per {veg}Vegetarian{} ingredient in the sushi","{f}+10{} sabor por ingrediente {veg}Vegetariano{} en el sushi"
+TOOL_BIRTHDAY_CANDLE_NAME,"Birthday Candle","Vela de cumpleaños"
+TOOL_BIRTHDAY_CANDLE_DESC,"{h}+{CURRENT_HYPE}{} hype\nLoses {h}{HYPE_LOSS}{} hype each service.","{h}+{CURRENT_HYPE}{} de hype\nPierde {h}{HYPE_LOSS}{} de hype en cada servicio"
+TOOL_BIRTHDAY_CANDLE_MSG_BLOWN_OUT,"Consumed!","¡Consumida!"
+SAUCE_SPARKLING_WATER_NAME,"Sparkling Water","Agua con gas"
+SAUCE_SPARKLING_WATER_DESC,"{f}+100{} flavour for the next sushi","{f}+100{} de sabor para el próximo sushi"
