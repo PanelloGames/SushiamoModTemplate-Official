@@ -4,4 +4,5 @@
 *.zip
 .DS_Store
 Thumbs.db
+id_db.gd
 
