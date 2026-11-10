@@ -1,11 +1,19 @@
 # SushiamoModTemplate
 Sample mod that adds an ingredient (Water), a tool (Birthday Candle), and a sauce (Sparkling Water).
+Also shows how to override vanilla content using extensions.
 
-The template will be expanded with more examples and apis as needed.
+Read this to understand how to setup the project and test your mods https://wiki.godotmodding.com/#mod-developer
+
+## Modding Support
+Sushiamo comes preloaded with https://wiki.godotmodding.com/ so you dont need to edit the game to add modding support, just create a mod and it will work!
 
 ## Customizing the mod
 - First edit the `manifest.json` to change the values
 - Then you can edit the `.gd` files to change the behavior of the mod
+
+## Mod lifecycle
+- `_init()` runs before vanilla resources are loaded: Use it to install script extensions/hook etc.
+- `_ready()` runs after all autoloads have initialized: Register new content (ingredients, tools...) there.
 
 ## Packaging the mod
 - Zip the `mods-unpacked` folder and name it like `Author-ModName-1.0.0.zip`
@@ -17,7 +25,7 @@ Author-SushiamoModTemplate-1.0.0.zip
 └── mods-unpacked/
     └── Author-SushiamoModTemplate/
         ├── manifest.json     # The mod metadata read by the game
-        ├── mod_main.gd       # Entry point of the mod, the mod loader calls _init()
+        ├── mod_main.gd       # Entry point of the mod, the mod loader calls _init() and then _ready()
 ```
 
 ## Where zipped mods go 

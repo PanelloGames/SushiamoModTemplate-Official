@@ -35,6 +35,9 @@ static func register() -> void:
 func requiresSelection() -> bool:
 	return false
 
+func usesPendingScoringEffect() -> bool:
+	return true
+
 func executeUse(me: Sauce, _ingredients: Array[Ingredient] = [], _selected: Array[Ingredient] = []) -> Array[Event]:
 	me.hasPendingScoringEffect = true
 	return [Event.cardTextPop(me.instanceId, tr("SAUCE_MSG_ACTIVATED"), SoundLib.Sound.MECHANISM)]
@@ -42,8 +45,7 @@ func executeUse(me: Sauce, _ingredients: Array[Ingredient] = [], _selected: Arra
 func executeOnScoring(me: Sauce, _allIngredients: Array[Ingredient]) -> Array[Event]:
 	if not me.hasPendingScoringEffect:
 		return []
-
+		
 	var events: Array[Event] = []
 	events.append_array(EzCardEvent.addGlobalFlavour(FLAVOUR_BONUS).to(me).build())
-	events.append(EzChangeItem.change(me, func(s: Sauce) -> void: s.hasPendingScoringEffect = false))
 	return events
